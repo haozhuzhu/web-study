@@ -1,0 +1,32 @@
+﻿http://47.98.251.34:23000/
+
+需求原型：http://10.199.150.125:8090/axure/apaas/index.html#g=1&p=全部消息&id=vmztsg
+
+
+接口问题：
+
+	1、/messageQuery/queryUserWebMessage 查询消息列表
+
+		a、没有列表总数返回
+
+		b、建议根据入参变化（如unread）直接查询（全部、已读、未读列表）
+
+		c、消息类型字段返回不符合需求
+
+	2、/messageUnread/updateReadedMessage 更新指定站内信消息为已读
+
+		a、没通
+
+		b、因存在批量操作，建议入参改为数组对象
+
+	3、缺“删除信息”接口（批量操作）
+
+	4、/messageQuery/queryUserContentMessage 消息内容查询
+
+		a、没通
+
+test  test  test
+
+
+
+	
